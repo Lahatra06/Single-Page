@@ -72,7 +72,7 @@ export default function App() {
           className="text-center mb-12"
         >
           <h1 className="text-5xl md:text-7xl font-serif text-white mb-4 drop-shadow-lg">
-            Pour Toi
+            Pour Mia
           </h1>
           <motion.p
             initial={{ opacity: 0 }}

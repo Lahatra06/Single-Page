@@ -59,34 +59,27 @@ export function LoveLetter({ isVisible, onResponse }: LoveLetterProps) {
                     💕
                   </motion.div>
                   <h2 className="text-3xl md:text-4xl font-serif text-rose-900 mb-2">
-                    Mon Amour
+                    Mia
                   </h2>
                   <div className="w-24 h-1 bg-gradient-to-r from-transparent via-rose-300 to-transparent mx-auto" />
                 </div>
 
                 <div className="space-y-4 text-rose-950/90 leading-relaxed font-serif text-base md:text-lg">
                   <p className="first-letter:text-5xl first-letter:font-serif first-letter:text-rose-600 first-letter:mr-1 first-letter:float-left">
-                    Chaque battement de mon cœur murmure ton nom, chaque étoile dans le ciel
-                    reflète l'éclat de ton sourire. Tu es la mélodie qui enchante mes jours,
-                    la lumière qui illumine mes nuits.
+                    Avant toi, J'étais perdu dans un silence intérieur que personne ne voyait.
+                    Au fond de moi il y avait ce vide immense, 
                   </p>
 
                   <p>
-                    Dans tes yeux, j'ai trouvé un univers infini où je veux me perdre pour
-                    toujours. Ton rire est la plus douce des symphonies, et ta présence, le
-                    plus précieux des cadeaux.
-                  </p>
-
-                  <p>
-                    Je t'aime au-delà des mots, au-delà du temps. Tu es mon aujourd'hui,
-                    mon demain, mon toujours. Avec toi, chaque instant devient une éternité
-                    de bonheur.
+                    Mais tu es apparue dans ma vie presque irréellement… et pourtant tout a changé.
+                    C'est étrange, parce qu'avant même de te voir, je ressentais déjà quelque chose pour toi.
+                    Une émotion inexplicable.
                   </p>
 
                   <p className="text-center italic pt-4">
-                    Tu es mon rêve devenu réalité,<br />
-                    mon soleil après la pluie,<br />
-                    mon éternelle raison d'aimer.
+                    Tu es devenue cette lumière que je n’attendais pas du tout. <br />
+                    Et aujourd’hui, je veux simplement te dire que je t’aime.<br />
+                    D’une manière sincère, profonde et presque impossible à expliquer. <br />
                   </p>
 
                   <div className="text-center pt-6">
@@ -99,10 +92,7 @@ export function LoveLetter({ isVisible, onResponse }: LoveLetterProps) {
                 {/* Signature */}
                 <div className="mt-8 text-right">
                   <p className="text-xl font-serif text-rose-800 italic">
-                    Pour toujours tien/tienne,
-                  </p>
-                  <p className="text-2xl font-serif text-rose-900 mt-2">
-                    Ton/Ta admirateur/admiratrice secret(e)
+                    Lahatra,
                   </p>
                 </div>
 
@@ -124,16 +114,18 @@ export function LoveLetter({ isVisible, onResponse }: LoveLetterProps) {
                       className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow font-serif text-lg"
                     >
                       <Heart className="w-5 h-5" fill="currentColor" />
-                      Oui, mille fois oui !
+                      Oui
                     </motion.button>
                     <motion.button
-                      onClick={() => handleAnswer('no')}
+                      onClick={() => {
+                        console.log("no");
+                      }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-gray-400 to-gray-500 text-white rounded-full shadow-lg hover:shadow-xl transition-shadow font-serif text-lg"
                     >
                       <HeartCrack className="w-5 h-5" />
-                      Non, désolé(e)
+                      Non
                     </motion.button>
                   </div>
                 </motion.div>
@@ -156,15 +148,10 @@ export function LoveLetter({ isVisible, onResponse }: LoveLetterProps) {
                       🎉
                     </motion.div>
                     <h2 className="text-4xl md:text-5xl font-serif text-rose-900 mb-4">
-                      Tu me rends si heureux/heureuse !
+                      ouehhh
                     </h2>
-                    <p className="text-xl md:text-2xl text-rose-700 font-serif mb-6">
-                      C'est le début de notre belle histoire... 💖
-                    </p>
                     <div className="space-y-3 text-rose-800">
                       <p className="text-lg italic">Notre amour brillera comme mille étoiles</p>
-                      <p className="text-lg italic">Chaque jour sera une nouvelle aventure</p>
-                      <p className="text-lg italic">Ensemble, pour toujours ✨</p>
                     </div>
                   </>
                 ) : (
